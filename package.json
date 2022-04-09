@@ -4,14 +4,20 @@
   "description": "Zach Writes Code Website Source",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./websocketd --staticdir=dev-out --port 8000"
+    "clear-cache": "rm -rf .cache/",
+    "clear-dist": "rm -rf dist/",
+    "clear-all": "npm run clear-cache && npm run clear-dist",
+    "build": "npm run clear-all && config/build.config.mjs",
+    "dev": "npm run clear-all && bin/run-dev.sh"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "handlebars": "^4.7.7",
     "handlebars-async-helpers": "^1.0.3",
     "highlight.js": "^11.5.0",
-    "markdown-it": "^12.3.2"
+    "markdown-it": "^12.3.2",
+    "nodemon": "^2.0.15"
   }
 }

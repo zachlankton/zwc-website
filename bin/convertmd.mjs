@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { convertMDFile } from "../lib/convertmd.mjs";
+import { convertMDFile } from "../lib/convertmd.lib.mjs";
 
 const pwd = process.cwd();
 const fname = process.argv[2];
