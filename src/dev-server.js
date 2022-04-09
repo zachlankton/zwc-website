@@ -1,4 +1,6 @@
 function connectWS() {
+  // just in case we forget to build before pushing to github
+  if (location.host !== "localhost:8000") return;
   console.log("Attempting Connection to Websocket Server...");
   const ws = new WebSocket("ws://localhost:8000/");
   setTimeout(() => {
