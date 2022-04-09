@@ -1,0 +1,17 @@
+{
+  "name": "zwc-website",
+  "version": "1.0.0",
+  "description": "Zach Writes Code Website Source",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./websocketd --staticdir=dev-out --port 8000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "handlebars-async-helpers": "^1.0.3",
+    "highlight.js": "^11.5.0",
+    "markdown-it": "^12.3.2"
+  }
+}
