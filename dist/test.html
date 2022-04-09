@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="/styles/default.css" />
+    <link rel="stylesheet" href="/styles/a11y-dark.css" />
+</head>
+
+<body>
+
+    <h1>Hello Test!</h1>
+
+
+    <script> 
+ function connectWS() {
+  console.log("Attempting Connection to Websocket Server...");
+  const ws = new WebSocket("ws://localhost:8000/");
+  setTimeout(() => {
+    if (ws.readyState === ws.CONNECTING) {
+      // 1 second timeout
+      ws.close();
+    }
+  }, 1000);
+  ws.onerror = function (err) {
+    console.log("Websocket connection error", err);
+  };
+  ws.onopen = function () {
+    console.log("Websocket connection opened");
+  };
+  ws.onclose = function () {
+    console.log("Websocket connection closed", window.ws_back_off);
+    connectWS();
+  };
+  ws.onmessage = function (event) {
+    const msg = event.data;
+    if (window.ws_message === undefined) window.ws_message = msg;
+    if (msg !== window.ws_message) location.reload();
+    console.log("ws heartbeat", msg);
+  };
+}
+
+connectWS();
+ 
+ </script>
+
+</body>
+
+</html>

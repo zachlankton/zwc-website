@@ -13,9 +13,28 @@ And then another second to make another paragraph
 
 **_Something Bolded_**
 
+### Javascript
+
 ```javascript
-console.log("Hello World");
+// Highlight JS --- Javascript
+function test() {
+  console.log("Hello World");
+}
 ```
+
+### Bash Script
+
+```bash
+#!/bin/bash
+tstamp=`date +%s`
+while true
+do
+    echo $tstamp
+    sleep 10;
+done
+```
+
+### Some Lorem Ipsum
 
 <div id="test-1"></div>
 
