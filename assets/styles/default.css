@@ -1,3 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Consistent Scrollbars for all browsers and 
+platforms (Makes windows scrollbars prettier) */
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.175);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
 html {
   font-family: sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 100vh;
+  background-color: #262626;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+}
+
+main > div.content {
+  flex: 690px;
+  transition: all 200ms;
+  max-width: 690px;
+  margin: 0 auto;
+  background-color: #2c5a9a;
+  padding: 20px;
+  color: lightgray;
+  border-radius: 10px;
+  position: relative;
+}
+
+main > div.sidebar.inflow {
+  transition: all 200ms;
+  flex: 290px;
+  max-width: 290px;
+  height: calc(100vh - 100px);
+
+  overflow-y: hidden;
+}
+
+div.sidebar.inflow > div.sidebar {
+  position: fixed;
+  width: 290px;
+  height: calc(100vh - 100px);
+  background-color: #414141;
+  border-radius: 10px;
+  top: 60px;
+  overflow-x: overlay;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 1010px) {
+  main > div.sidebar.inflow {
+    max-width: 0px;
+  }
+  main > div.content {
+    max-width: 750px;
+  }
+}
+
+div.anchor {
+  position: relative;
+  top: -50px;
+}
+
+img {
+  margin: 10px auto;
+  width: 90%;
+  display: block;
 }
