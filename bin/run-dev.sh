@@ -11,5 +11,5 @@ nodemon \
     --watch ${ZSSG_SRC} \
     --watch assets/styles \
     --watch assets/scripts \
-    -e hbs,md,css,js,mjs,json \
+    -e hbs,md,css,js,mjs,json,lyt \
     --exec bin/dev-server.sh
