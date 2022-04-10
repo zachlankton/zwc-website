@@ -10,7 +10,6 @@
   }
 
   function toggle_sidebar(ev) {
-    alert("asdf");
     ev.stopPropagation();
     const btn = mobileSidebarBtn;
 
