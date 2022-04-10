@@ -12,8 +12,18 @@
 </head>
 
 <body>
-    {{ CONTENT }}
-
+    <main>
+        <div class="content">
+            {{ CONTENT }}
+        </div>
+        {{#if SIDEBAR}}
+        <div class="sidebar inflow">
+            <div class="sidebar">
+                {{SIDEBAR}}
+            </div>
+        </div>
+        {{/if}}
+    </main>
     {{ dev-server }}
 </body>
 
