@@ -30,7 +30,7 @@ html {
 
 body {
   margin: 0;
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 100vh;
   background-color: #262626;
 }
@@ -40,6 +40,7 @@ main {
   margin: 0 auto;
   overflow: hidden;
   display: flex;
+  padding: 10px 0px 10px 0px;
 }
 
 main > div.content {
@@ -52,6 +53,7 @@ main > div.content {
   color: lightgray;
   border-radius: 10px;
   position: relative;
+  box-shadow: 0px 0px 4px 1px white;
 }
 
 main > div.sidebar.inflow {
@@ -63,7 +65,7 @@ main > div.sidebar.inflow {
   overflow-y: hidden;
 }
 
-div.sidebar.inflow > div.sidebar {
+div.sidebar.inflow > div#sidebar {
   position: fixed;
   width: 290px;
   height: calc(100vh - 100px);
@@ -71,16 +73,52 @@ div.sidebar.inflow > div.sidebar {
   border-radius: 10px;
   top: 60px;
   overflow-x: overlay;
+  transition: all 200ms;
+  box-shadow: 0px 0px 4px 1px white;
 }
 
-.sidebar ul {
+div.sidebar.inflow > div#sidebar.mobile {
+  right: -400px;
+}
+
+div.sidebar.inflow > div#sidebar.mobile.open {
+  right: 10px;
+}
+
+#sidebar ul {
   list-style: none;
+  padding-left: 0px;
+}
+
+#sidebar h4,
+#sidebar h5,
+#sidebar h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+#sidebar h4 > a {
   padding-left: 20px;
 }
+#sidebar h5 > a {
+  padding-left: 40px;
+}
+#sidebar h6 > a {
+  padding-left: 60px;
+}
 
-.sidebar a {
+#sidebar a:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+#sidebar a {
   text-decoration: none;
   color: white;
+  transition: all 300ms;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  display: block;
 }
 
 @media only screen and (max-width: 1010px) {
@@ -101,4 +139,30 @@ img {
   margin: 10px auto;
   width: 90%;
   display: block;
+}
+
+main #mobile-sidebar-btn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: white;
+  border-radius: 50%;
+  border: 0px;
+  display: none;
+  font-weight: bolder;
+  transition: all 300ms;
+  box-shadow: 1px 1px 20px -1px black;
+}
+
+main #mobile-sidebar-btn:hover {
+  background-color: rgb(29, 29, 21);
+  color: yellow;
+}
+
+@media only screen and (max-width: 1010px) {
+  main #mobile-sidebar-btn {
+    display: unset;
+  }
 }
