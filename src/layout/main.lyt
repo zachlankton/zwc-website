@@ -22,7 +22,7 @@
                 {{SIDEBAR}}
             </div>
         </div>
-        <button id="mobile-sidebar-btn" onclick="toggle_sidebar(event)">Menu</button>
+        <button id="mobile-sidebar-btn">Menu</button>
         {{/if}}
     </main>
     {{ dev-server }}
