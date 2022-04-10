@@ -1,3 +1,17 @@
+{{anchor "top-of-page"}}
+
+# Another Hello Example Test
+
+{{customHelper}} (handlebars) inside convertMD inside an HBS file **_(Inception)_**
+
+![Rick and Morty Simulation](/imgs/simulation.jpg)
+
+## Testing Another Header test
+
+{{convertMD (customHelper)}}
+
+<h1>{{hello}}</h1>
+
 ## Hello World!
 
 ---
@@ -36,7 +50,7 @@ done
 
 ### Some Lorem Ipsum
 
-<div id="test-1"></div>
+{{anchor "test-1"}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt urna
 nec felis molestie, nec ornare dui rhoncus. Donec efficitur nulla massa, sit
@@ -51,7 +65,7 @@ tincidunt sodales elit. Vivamus nec dolor vel urna sollicitudin varius. In a
 ligula fringilla, dapibus nunc et, euismod ante. Fusce dictum tellus
 porttitor sem tincidunt sollicitudin.
 
-<div id="test-2"></div>
+{{anchor "test-2"}}
 
 Fusce eu fringilla risus. Nullam nec porttitor lacus. Phasellus semper
 hendrerit ante, quis tristique lectus elementum id. Maecenas non libero
@@ -66,7 +80,7 @@ lorem. Quisque iaculis nisl at libero imperdiet, id auctor ante facilisis.
 In hac habitasse platea dictumst. Ut pellentesque, libero at accumsan
 convallis, purus nisi blandit magna, in tristique massa ante vel lorem.
 
-<div id="test-3"></div>
+{{anchor "test-3"}}
 
 Sed scelerisque, massa quis pulvinar pellentesque, tellus dolor maximus
 velit, eu laoreet lectus metus vitae ex. Nunc vehicula fermentum velit ut
@@ -80,7 +94,7 @@ tortor purus, et volutpat massa tempor non. Nam vitae viverra justo. Fusce
 non nibh est. Nam pharetra magna tortor, ac faucibus ipsum dictum ac. Sed
 non magna sem.
 
-<div id="test-4"></div>
+{{anchor "test-4"}}
 
 Vestibulum scelerisque urna eu scelerisque dignissim. Nunc convallis sem sed
 pellentesque commodo. Donec vel vulputate diam, nec viverra metus. Quisque
@@ -91,7 +105,7 @@ Phasellus tortor ex, suscipit eleifend tellus ut, tristique lobortis metus.
 Donec pretium lectus turpis, vitae iaculis turpis suscipit in. Sed dui nisl,
 accumsan vel lacinia et, hendrerit eu orci. Fusce faucibus imperdiet urna.
 
-<div id="test-5"></div>
+{{anchor "test-5"}}
 
 Aliquam imperdiet urna vitae condimentum suscipit. Donec a euismod dolor.
 Duis id suscipit nisi. Donec finibus metus at lectus vehicula, sit amet

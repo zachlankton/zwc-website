@@ -1,15 +1,12 @@
 {{page-title "Zach Writes Code Home Page"}}
 {{meta-description "This is the home page for Zach Writes Code"}}
 
-{{#useLayout "layout/main"}}
-{{convertMD
-"
-# Another Hello Example Test
-{{customHelper}} (handlebars) inside convertMD inside an HBS file **_(Inception)_**
-## Testing Another Header test
-"
-}}
-{{convertMD (customHelper)}}
-<h1>{{hello}}</h1>
+{{#sidebar}}
+{{mdfile "md/sidebar.md"}}
+{{/sidebar}}
+
+{{#useLayout "layout/main.lyt"}}
+
+
 {{mdfile "md/index.md"}}
 {{/useLayout}}
