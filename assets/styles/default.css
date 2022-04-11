@@ -56,6 +56,10 @@ main > div.content {
   box-shadow: 0px 0px 4px 1px white;
 }
 
+div.content a {
+  color: white;
+}
+
 main > div.sidebar.inflow {
   transition: all 200ms;
   flex: 290px;

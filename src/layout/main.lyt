@@ -12,18 +12,20 @@
 </head>
 
 <body>
+    {{anchor "top-of-page"}}
     <main>
         <div class="content">
             {{ CONTENT }}
         </div>
-        {{#if SIDEBAR}}
+
         <div class="sidebar inflow">
             <div id="sidebar">
+                {{mdfile "layout/main-sidebar.md"}}
                 {{SIDEBAR}}
             </div>
         </div>
         <button id="mobile-sidebar-btn">Menu</button>
-        {{/if}}
+
     </main>
     {{ dev-server }}
     <script src="/scripts/main.js"></script>

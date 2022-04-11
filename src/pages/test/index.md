@@ -1,5 +1,3 @@
-{{anchor "top-of-page"}}
-
 # Another Hello Example Test
 
 {{customHelper}} (handlebars) inside convertMD inside an HBS file **_(Inception)_**
