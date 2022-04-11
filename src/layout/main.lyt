@@ -29,7 +29,6 @@
     </main>
     {{ dev-server }}
     <script src="/scripts/main.js"></script>
-    <script src="/scripts/smoothscroll.js"></script>
 
 </body>
 
