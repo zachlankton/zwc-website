@@ -31,7 +31,7 @@ export async function onRequest(context) {
         email: "no-reply@zachwritescode.com",
         name: "Zach Writes Code Website",
       },
-      subject: "A MESSAGE FROM ", // + jsonData.from_user,
+      subject: "A MESSAGE FROM " + jsonData.from_user,
       content: [
         {
           type: "text/plain",
@@ -47,15 +47,16 @@ export async function onRequest(context) {
 
   if (request.method == "POST") {
     const resp = await fetch(send_request);
-    console.log(send_request);
     const respText = await resp.text();
-    respContent = resp.status + " " + resp.statusText + "\n\n" + respText;
-    console.log(respContent);
+    respContent = JSON.stringify({
+      statusCode: resp.status,
+      statusText: resp.statusText,
+    });
   }
 
-  let htmlContent = ``;
+  let jsonContent = respContent || `{"err": "Error/Unknown"}`;
 
-  return new Response(htmlContent, {
-    headers: { "content-type": "text/html" },
+  return new Response(jsonContent, {
+    headers: { "content-type": "application/json" },
   });
 }
