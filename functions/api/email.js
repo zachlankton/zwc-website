@@ -1,9 +1,13 @@
-export async function onRequestPost(request) {
-  let content = "";
+export async function onRequest(context) {
+  const { request } = context;
+  const jsonData = {};
 
-  for (var i of request.headers.entries()) {
-    content += i[0] + ": " + i[1] + "\n";
+  if (request.method == "POST") {
+    const jData = await request.json();
+    jsonData.from_user = jData.from_user;
+    jsonData.message = jData.message;
   }
+  console.log(jsonData);
 
   let send_request = new Request("https://api.mailchannels.net/tx/v1/send", {
     method: "POST",
@@ -24,14 +28,14 @@ export async function onRequestPost(request) {
         },
       ],
       from: {
-        email: "website@zachwritescode.com",
+        email: "no-reply@zachwritescode.com",
         name: "Zach Writes Code Website",
       },
-      subject: "Test Subject",
+      subject: "A MESSAGE FROM ", // + jsonData.from_user,
       content: [
         {
           type: "text/plain",
-          value: "Test message content\n\n" + content,
+          value: jsonData.message,
         },
       ],
     }),
@@ -43,14 +47,13 @@ export async function onRequestPost(request) {
 
   if (request.method == "POST") {
     const resp = await fetch(send_request);
+    console.log(send_request);
     const respText = await resp.text();
     respContent = resp.status + " " + resp.statusText + "\n\n" + respText;
+    console.log(respContent);
   }
 
-  let htmlContent = `<html><head></head><body><pre>
-        </pre><p>Click to send message: <form method="post"><input type="submit" value="Send"/></form></p>
-        <pre>${respContent}</pre>
-        </body></html>`;
+  let htmlContent = ``;
 
   return new Response(htmlContent, {
     headers: { "content-type": "text/html" },

@@ -17,9 +17,3 @@ In the meantime, while I work on getting more of this site setup, feel free to c
 <a href="https://twitter.com/zachwritescode?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @zachwritescode</a>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
----
-
-<a class="twitter-timeline" href="https://twitter.com/zachwritescode?ref_src=twsrc%5Etfw">Tweets by zachwritescode</a>
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
