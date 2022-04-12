@@ -12,23 +12,34 @@
 </head>
 
 <body>
-    {{anchor "top-of-page"}}
-    <main>
-        <div class="content">
-            {{ CONTENT }}
-        </div>
+    <header>
+        <p>Zach Writes Code</p>
+    </header>
 
-        <div class="sidebar inflow">
-            <div id="sidebar">
-                {{mdfile "layout/main-sidebar.md"}}
-                {{SIDEBAR}}
+    <div id="scroll-div">
+        {{anchor "top-of-page"}}
+        <main>
+            <div class="content">
+                {{ CONTENT }}
+                <a href="https://buymeacoffee.com/zachx" target="_BLANK" class="buy-me-coffee">
+                    <img src="/imgs/bmc-button.png" />
+                    <p> If you enjoy this content, consider buying me a coffee to keep me fueled to make more!</p>
+                </a>
             </div>
-        </div>
-        <button id="mobile-sidebar-btn">Menu</button>
 
-    </main>
+            <div class="sidebar inflow">
+                <div id="sidebar">
+                    {{mdfile "layout/main-sidebar.md"}}
+                    {{SIDEBAR}}
+                </div>
+            </div>
+            <button id="mobile-sidebar-btn">Menu</button>
+
+        </main>
+    </div>
     {{ dev-server }}
     <script src="/scripts/main.js"></script>
+
 
 </body>
 
