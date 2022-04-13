@@ -1,2 +1,1 @@
-- #### [Top](#top-of-page)
-- #### [Test](/test)
+- #### [Other Test Page](/test)

@@ -1,19 +1,24 @@
-# Zach Writes Code!
+<div class="logo">
+    <img src="/imgs/zwc.logo.png" alt="Site Logo" />
+    <h1>Zach Writes Code</h1>
+</div>
 
-Welcome! This site is currently a work in progress.
+## Welcome to Zach Writes Code!
 
-If you somehow ended up here today, it is very bare and very early. Come back in a week or 2 to see whats up!
+### A simple place to host my blog, projects, and services.
 
-This will be my personal portfolio page to show off my skills and projects as well as a bit of a blog to do write ups on the projects I am building and things I am learning.
+<div class="cards">
 
-I have created my own custom handlebars and markdown static site generator to build this site. I plan to make the general project available after I've built the majority of this site and have worked out the bugs. But if you are interested in peaking under the hood, the source to this site is publicly available on my github page:
+<a href="/about"><label>About</label></a>
+![Image of Zach Lankton. Link to About me](/imgs/me.jpg)
 
-[https://github.com/zachlankton/zwc-website](https://github.com/zachlankton/zwc-website)
+<a href="/blog"><label>Blog</label></a>
+![Image of Man typing outside under the stars. Link to Blog](/imgs/blog.jpg)
 
-In the meantime, while I work on getting more of this site setup, feel free to checkout my github or youtube, or follow me on twitter for updates!
+<a href="/services"><label>Services</label></a>
+![Image of Code for Services Link](/imgs/code.jpg)
 
-## Follow me on Twitter!
+<a href="/projects"><label>Projects</label></a>
+![Assorted Mechanical Parts for Projects Link](/imgs/projects.jpg)
 
-<a href="https://twitter.com/zachwritescode?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @zachwritescode</a>
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>

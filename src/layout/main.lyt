@@ -12,9 +12,14 @@
 </head>
 
 <body>
-    <header>
-        <p>Zach Writes Code</p>
-    </header>
+    <a href="/">
+        <header>
+            <div>
+                <img height="40px" src="/imgs/zwc.logo.png" alt="Site Logo" />
+                <p>Zach Writes Code</p>
+            </div>
+        </header>
+    </a>
 
     <div id="scroll-div">
         {{anchor "top-of-page"}}
@@ -22,7 +27,7 @@
             <div class="content">
                 {{ CONTENT }}
                 <a href="https://buymeacoffee.com/zachx" target="_BLANK" class="buy-me-coffee">
-                    <img src="/imgs/bmc-button.png" />
+                    <img src="/imgs/bmc-button.png" alt="Buy Me A Coffee Button Image" />
                     <p> If you enjoy this content, consider buying me a coffee to keep me fueled to make more!</p>
                 </a>
             </div>
