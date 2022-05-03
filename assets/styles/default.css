@@ -34,6 +34,13 @@ body {
   height: 100vh;
 }
 
+p {
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  font-size: 1.1rem;
+}
+
 #scroll-div {
   position: fixed;
   top: 50px;
@@ -72,7 +79,7 @@ header > dev > * {
 }
 header > div {
   margin: 0 auto;
-  max-width: 190px;
+  max-width: 200px;
   display: flex;
   align-items: center;
   max-height: 50px;
@@ -195,6 +202,12 @@ div.sidebar.inflow > div#sidebar.mobile.open {
   }
   main > div.content {
     max-width: 750px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  main > div.content {
+    max-width: 100%;
   }
 }
 
