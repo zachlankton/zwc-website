@@ -7,14 +7,19 @@
 Are you looking for someone to help you create a website or a web application?
 
 ```jsx
-export function AwesomeWebsite(props) {
-  const { n } = props;
+function AwesomeWebsite({ n }) {
   return (
     <>
       <p> I have {n} years of experience in web development </p>
     </>
   );
 }
+
+export async function getServerSideProps() {
+  return { props: { n: "many" } };
+}
+
+export default AwesomeWebsite;
 ```
 
 I am an expert in HTML, CSS, and JavaScript. I can create what you need using whatever stack you would like. It can be as simple as a handwritten page or as complex as a custom business ERP app built using the newest front-end framework and the latest flavor of SQL or NoSQL tech. No web tech too scary, No project is too big or small. [Contact me today](/contact).
