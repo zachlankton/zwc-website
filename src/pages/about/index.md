@@ -52,7 +52,7 @@ My first weakness is Microsoft Windows. I use it every day for personal and busi
 
 ### Top Projects
 
-- Small Business ERP (Coming Soon!)
+- [Small Business ERP](/projects/erp)
 - Wireguard VPN (Coming Soon!)
 - Static Site Generator (Coming Soon!)
 

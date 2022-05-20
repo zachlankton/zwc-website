@@ -314,3 +314,17 @@ div.cards * > label {
   text-align: center;
   background-color: #0000007d;
 }
+
+.card {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #00000045;
+}
+
+.row {
+  display: flex;
+}
+
+.row > * {
+  flex: 1;
+}
