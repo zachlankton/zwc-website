@@ -15,7 +15,7 @@ His name is Tech Sam, which is short for Technological SamSquanch.
 
 He loves Chia because it helps protect his home in the forest.
 
-Which is why Tech Sam chose to be minted using Chia's NFT1 Standard.
+For this reason, Tech Sam chose to be minted using Chia’s NFT1 Standard.
 
 </div>
 
