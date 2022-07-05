@@ -27,8 +27,7 @@ A bit of chia command line foolery later, and I had created my first NFT ever!!
 
 Ok, for those interested in the exact steps taken, here you are.
 
-For my first NFT, I decided to mint without using a DID wallet as the process was much more straightforward.
-However, a [DID Wallet](https://devs.chia.net/guides/nft-cli#mint-an-nft-with-did) offers many benefits over minting a simple NFT on the blockchain. These benefits include being able to add metadata, licensing, and royalties. The drawback is some added complexity in the minting process and extra cost to mint.
+For my first NFT, I decided to mint without using a DID wallet as the process was more straightforward. I also decided to not include the options for metadata, licensing, and royalties to keep it simple. Metadata and license uri's can be added after minting, but royalties cannot. If you want to setup royalties, it needs to be performed at mint time.
 
 First, I created an image using my favorite image creator/editor. In this case, it was Krita.
 I then exported the picture as a PNG. (Jpegs and other formats work as well).
@@ -100,3 +99,7 @@ The Official Chia NFT Documentation <br>
 
 Offical Chia Website <br>
 [https://www.chia.net/](https://www.chia.net/)
+
+---
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd70NgEPG9N-Dvm4EwfQs2HDmuOhUKuqGuVx3xmzfYef8J9VA/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
