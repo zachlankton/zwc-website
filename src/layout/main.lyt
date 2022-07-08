@@ -21,7 +21,7 @@
         </header>
     </a>
 
-    <div id="scroll-div">
+    <div id="scroll-div" style="overflow:overlay;">
         {{anchor "top-of-page"}}
         <main>
             <div class="content">

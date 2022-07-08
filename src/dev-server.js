@@ -5,7 +5,9 @@ function connectWS() {
     const page = localStorage.getItem("zwc-scroll-path");
     const sTop = localStorage.getItem("zwc-scroll-top");
     if (page === null || sTop === null || page !== location.pathname) return;
-    document.querySelector("#scroll-div").scrollTo(0, sTop);
+    document
+      .querySelector("#scroll-div")
+      .scrollTo({ top: sTop, left: 0, behavior: "instant" });
   });
   console.log("Attempting Connection to Websocket Server...");
   const ws = new WebSocket("ws://localhost:8000/");
@@ -38,7 +40,9 @@ function connectWS() {
         "zwc-scroll-top",
         document.querySelector("#scroll-div").scrollTop
       );
-      location.reload();
+      setTimeout(() => {
+        location.reload();
+      }, 100);
     }
     console.log("ws heartbeat", msg);
   };

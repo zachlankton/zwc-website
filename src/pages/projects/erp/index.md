@@ -72,15 +72,8 @@ This Small Business ERP was created for a small manufacturing business, [Molded 
   - Entirely Containerized (Docker & LXC) Deployment
     - Docker / Portainer installed on VM's
     - CouchDB LXC installed directly onto Server
-  - 2 Replicated Deployments
-    - Zero Downtime Maintenance and Failover
-    - Active-Active 2 way Sync
-    - DB sync is practically instant
-    - File sync is near instant thanks to [mirror](https://github.com/stephenh/mirror)
-      - But owncloud refresh is delayed by 15 minute cron scan
   - 1 Deployment Live in Cloud (accessible through Wireguard VPN)
   - 1 Deployment Available On and Offline on Premises
-  - Network Failures are assumed and sync resumes upon restoration.
 
 </div>
 
