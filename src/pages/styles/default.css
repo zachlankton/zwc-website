@@ -40,6 +40,12 @@ p {
   line-height: 1.5em;
 }
 
+code {
+  background-color: #2b2b2b;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 #scroll-div {
   position: fixed;
   top: 50px;
@@ -97,6 +103,7 @@ header img {
 
 .logo img {
   max-width: 200px;
+  min-width: 200px;
   object-fit: cover;
 }
 
@@ -121,7 +128,7 @@ main > div.content {
   border-radius: 10px;
   position: relative;
   box-shadow: 0px 0px 4px 1px white;
-  padding-bottom: 50vh;
+  padding-bottom: 65vh;
   text-align: justify;
 }
 

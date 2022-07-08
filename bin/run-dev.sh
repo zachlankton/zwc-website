@@ -9,7 +9,5 @@ source ".env"
 nodemon \
     --address=localhost \
     --watch ${ZSSG_SRC} \
-    --watch assets/styles \
-    --watch assets/scripts \
-    -e hbs,md,css,js,mjs,json,lyt \
+    -e hbs,md,css,js,mjs,json,lyt,html \
     --exec bin/dev-server.sh
