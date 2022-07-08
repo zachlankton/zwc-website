@@ -4,7 +4,7 @@
 
 ![Rick and Morty Simulation](/imgs/simulation.jpg)
 
-## Testing Another Header test
+## Testing Another Header
 
 {{convertMD (customHelper)}}
 
