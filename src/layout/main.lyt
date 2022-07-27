@@ -15,7 +15,7 @@
     <a href="/">
         <header>
             <div>
-                <img height="40px" src="/imgs/zwc.logo.png" alt="Site Logo" />
+                <img height="40px" src="/favicon-32x32.png" alt="Site Logo" />
                 <p>Zach Writes Code</p>
             </div>
         </header>

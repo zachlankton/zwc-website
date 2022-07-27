@@ -10,7 +10,7 @@ Live Reload
 
 Getting Started
 
-Environment Variables
+Environment Variables --- needs to be setup for development!
 
 Configuration (config files)
 
