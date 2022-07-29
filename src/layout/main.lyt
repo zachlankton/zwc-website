@@ -43,7 +43,6 @@
         </main>
     </div>
     {{ dev-server }}
-    <script src="https://cdn.rawgit.com/adriancooney/console.image/c9e6d4fd/console.image.min.js"></script>
     <script src="/scripts/main.js"></script>
 
 
