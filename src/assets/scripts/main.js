@@ -29,4 +29,28 @@
       }, 10);
     }
   }
+
+  window.addEventListener("load", () => {
+    var c = document.createElement("canvas");
+    c.width = "40";
+    c.height = "40";
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("header-icon");
+    ctx.drawImage(img, 4, 4);
+
+    let backgroundImage = [
+      `background-image: url(${c.toDataURL()})`,
+      "color: black",
+      "padding: 50px",
+      "font-weight: bolder",
+      "font-size: 30px",
+      "-webkit-text-stroke-width: 1px",
+      "-webkit-text-stroke-color: yellow",
+      "text-transform: uppercase",
+      "text-align: center",
+      "letter-spacing: 1px",
+    ].join(" ;");
+
+    console.log("%cWelcome, Curious Human!", backgroundImage);
+  });
 })();

@@ -47,4 +47,4 @@
 
 ## Latest Blog Post
 
-{{mdfile "pages/blog/ssg-compare/preview.md"}}
+{{mdfile "pages/blog/basic-linux-security/preview.md"}}
