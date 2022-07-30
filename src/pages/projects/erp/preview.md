@@ -1,7 +1,7 @@
 <a href="/projects/erp" style="text-decoration: none;">
 <div class="card">
 
-<div class="row">
+<div class="row"  style="align-items: center">
 
 <div style="margin: 20px">
 
