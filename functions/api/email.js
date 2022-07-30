@@ -1,5 +1,5 @@
 export async function onRequest(context) {
-  const { request } = context;
+  const { request, env } = context;
   const jsonData = {};
 
   if (request.method == "POST") {
@@ -21,15 +21,15 @@ export async function onRequest(context) {
         {
           to: [
             {
-              email: process.env.to_email,
-              name: process.env.to_email_name,
+              email: env.to_email,
+              name: env.to_email_name,
             },
           ],
         },
       ],
       from: {
-        email: process.env.from_email,
-        name: process.env.from_email_name,
+        email: env.from_email,
+        name: env.from_email_name,
       },
       subject: "A MESSAGE FROM " + jsonData.from_user,
       content: [
