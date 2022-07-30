@@ -74,7 +74,7 @@ Directories:
 |-- dev-server.js
 
 |-- layout
-|   |-- main-sidebar.MD
+|   |-- main-sidebar.md
 |   `-- main.lyt
 
 `-- pages
@@ -88,8 +88,8 @@ Directories:
     |-- static.html
     |-- index.hbs
     |-- helpers.mjs
-    |-- index.MD
-    `-- sidebar.MD
+    |-- index.md
+    `-- sidebar.md
 ```
 
 ---
@@ -300,7 +300,7 @@ If you refer back to the layout example, you will see the sidebar section like t
 
 ```HTML
 <section id="sidebar">
-  \{{mdfile "layout/main-sidebar.MD"}} \{{SIDEBAR}}
+  \{{mdfile "layout/main-sidebar.md"}} \{{SIDEBAR}}
 </section>
 ```
 
@@ -308,7 +308,7 @@ and in the template, you see this:
 
 ```handlebars
 \{{#sidebar}}
-\{{mdfile "pages/sidebar.MD"}}
+\{{mdfile "pages/sidebar.md"}}
 \{{/sidebar}}
 ```
 
@@ -317,7 +317,7 @@ What's happening is the layout file includes the `layout/main-sidebar.md`, which
 Suppose we have the following sidebar markdown files:
 
 ```MD
-layout/main-sidebar.MD
+layout/main-sidebar.md
 
 - [Home](/)
 - [Blog](/blog)
@@ -327,7 +327,7 @@ layout/main-sidebar.MD
 ```
 
 ```MD
-pages/sidebar.MD
+pages/sidebar.md
 
 - [Top](#top)
 - [Section 1](#section1)
