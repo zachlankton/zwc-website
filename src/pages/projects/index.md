@@ -1,17 +1,7 @@
 # Projects
 
-<a href="/projects/erp">
-<div class="card">
+{{mdfile "pages/projects/erp/preview.md"}}
 
-### Small Business ERP
+<hr style="margin: 20px;" />
 
-<div class="row">
-
-![Screenshot1](/imgs/erpcap1.png)
-
-![Screenshot1](/imgs/erpcap2.png)
-
-</div>
-
-</div>
-</a>
+{{mdfile "pages/projects/ssg/preview.md"}}

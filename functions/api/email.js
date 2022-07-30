@@ -21,15 +21,15 @@ export async function onRequest(context) {
         {
           to: [
             {
-              email: "zach@zachwritescode.com",
-              name: "Zach At MMPMG",
+              email: process.env.to_email,
+              name: process.env.to_email_name,
             },
           ],
         },
       ],
       from: {
-        email: "no-reply@zachwritescode.com",
-        name: "Zach Writes Code Website",
+        email: process.env.from_email,
+        name: process.env.from_email_name,
       },
       subject: "A MESSAGE FROM " + jsonData.from_user,
       content: [

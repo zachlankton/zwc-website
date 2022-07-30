@@ -41,9 +41,32 @@ p {
 }
 
 code {
-  background-color: #2b2b2b;
+  background-color: #2b2b2b3b;
+  color: white;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+blockquote {
+  background-color: #2b4b77;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 6px 6px 10px -8px #f0f8ff;
+}
+
+blockquote blockquote {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+blockquote p {
+  margin: 0px;
+  padding: 0px;
 }
 
 #scroll-div {
@@ -334,4 +357,9 @@ div.cards * > label {
 
 .row > * {
   flex: 1;
+}
+
+.content li {
+  line-height: 25px;
+  margin: 5px;
 }

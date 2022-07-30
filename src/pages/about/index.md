@@ -53,8 +53,8 @@ My first weakness is Microsoft Windows. I use it every day for personal and busi
 ### Top Projects
 
 - [Small Business ERP](/projects/erp)
+- [Static Site Generator](/projects/ssg)
 - Wireguard VPN (Coming Soon!)
-- Static Site Generator (Coming Soon!)
 
 ### Top Open Source Contributions
 

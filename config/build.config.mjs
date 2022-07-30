@@ -7,6 +7,12 @@ import build, { buildPages, includeAssets } from "../lib/build.lib.mjs";
 // await build("test1/test2/test3.hbs", "test1/test2/test3.html");
 
 // Look for all files that end with *.hbs and build them!
+const startTime = Date.now();
+
 await buildPages();
 
 includeAssets();
+
+const endTime = Date.now();
+
+console.log(`Built in ${endTime - startTime} ms`);

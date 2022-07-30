@@ -1,11 +1,11 @@
 <a href="/blog/basic-linux-security" style="text-decoration: none;">
 <div class="card">
 
+<div class="row" style="align-items: center">
+
+<div style="margin: 20px">
+
 ### Basic Linux Security
-
-<div class="row" >
-
-<div>
 
 July 29th, 2022 (2022-07-29)
 

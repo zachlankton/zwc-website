@@ -1,5 +1,5 @@
 <div class="logo">
-    <img src="/imgs/zwc.logo.png" alt="Site Logo" />
+    <img src="/imgs/zwc.logo_300x-min.png" alt="Site Logo" />
     <h1>Zach Writes Code</h1>
 </div>
 
@@ -27,21 +27,11 @@
 
 ## Latest Projects
 
-<a href="/projects/erp">
-<div class="card">
+{{mdfile "pages/projects/erp/preview.md"}}
 
-### Small Business ERP
+<div style="margin: 10px;"></div>
 
-<div class="row">
-
-![Screenshot1](/imgs/erpcap1.png)
-
-![Screenshot1](/imgs/erpcap2.png)
-
-</div>
-
-</div>
-</a>
+{{mdfile "pages/projects/ssg/preview.md"}}
 
 ---
 

@@ -4,11 +4,9 @@
   "description": "Zach Writes Code Website Source",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clear-cache": "rm -rf .cache/",
-    "clear-dist": "rm -rf dist/",
-    "clear-all": "npm run clear-cache && npm run clear-dist",
-    "build": "npm run clear-all && config/build.config.mjs",
-    "dev": "npm run clear-all && bin/run-dev.sh"
+    "clear-cache": "rm -rf .cache/ && rm -rf dist/",
+    "build": "npm run clear-cache && config/build.config.mjs",
+    "dev": "bin/run-dev.sh"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +18,9 @@
     "markdown-it": "^12.3.2",
     "nodemon": "^2.0.15",
     "wrangler": "^0.0.25"
+  },
+  "engines": {
+    "npm": ">=8.15.0",
+    "node": ">=18.6.0"
   }
 }
