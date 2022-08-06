@@ -16,7 +16,7 @@ Posting Date: 2022-07-29
 
 This project is a static site builder that I created to generate this portfolio site you are reading right now! Why in the Sam Hill would someone do such a thing?! For fun and learning, of course! I know that I could have easily used one of the many choices out there for generating static sites, but I had this idea that I wanted to try out, and this is the result.
 
-I have used handlebars quite a bit for templating in the past, and I wanted a site generator built primarily from handlebars with content written in markdown files. Many static site generators follow similar templating patterns, with some even using handlebars! As of this writing, 33 out of 335 site generators on [Jamstack.org](https://jamstack.org/generators/) list handlebars as one of the available templating engines. However, I'm not alone in the world of thinking that I have an excellent idea for a better static site generator!
+I have used handlebars quite a bit for templating in the past, and I wanted a site generator built primarily from handlebars with content written in markdown files. Many static site generators follow similar templating patterns, with some even using handlebars! As of this writing, 33 out of 335 site generators on [Jamstack.org](https://jamstack.org/generators/) list handlebars as one of the available templating engines. It looks like I'm not alone in the world of thinking that I have an excellent idea for a better static site generator!
 
 ---
 
