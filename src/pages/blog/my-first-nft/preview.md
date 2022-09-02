@@ -1,9 +1,9 @@
 <a href="/blog/my-first-nft" style="text-decoration: none;">
-<div class="card">
+<div class="card hover-effect">
 
-<div class="row" style="align-items: center">
+<div class="row" style="align-items: center; flex-wrap: wrap;">
 
-<div style="margin: 20px">
+<div style="margin: 20px; min-width: 200px;">
 
 ### My First NFT
 
@@ -17,7 +17,7 @@ For this reason, Tech Sam chose to be minted using Chia’s NFT1 Standard.
 
 </div>
 
-<div style="max-width: 200px; margin: 5px;">
+<div style="max-width: 200px; min-width: 200px; margin: 5px auto;">
 
 ![Screenshot1](/imgs/techSamLoRes.png)
 
