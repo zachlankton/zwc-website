@@ -8,4 +8,4 @@ https://:zwc-website.pages.dev/*
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
   Permissions-Policy: document-domain=()
-  Content-Security-Policy: script-src 'self' 'sha256-O4LyQeyRQnqRbVo5FaeRw3xAsVVejtBGFEVJXT99Qf0=' 'sha256-CMpFgUfdNK5S+iVLGTIK6eR/x0y6Ro0giaqXzSA65Lo='; frame-ancestors 'none';
+  Content-Security-Policy: script-src 'self' 'sha256-Z3NFL1ecf1QXbxIG9CXGanyrlEm+KPFVkM6IkoXiV2Q=' 'sha256-O4LyQeyRQnqRbVo5FaeRw3xAsVVejtBGFEVJXT99Qf0=' 'sha256-CMpFgUfdNK5S+iVLGTIK6eR/x0y6Ro0giaqXzSA65Lo='; frame-ancestors 'none';
