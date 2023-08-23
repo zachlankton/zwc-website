@@ -9,11 +9,12 @@ export async function onRequest(context) {
   }
   console.log(jsonData);
 
-  let send_request = new Request("https://api.mailchannels.net/tx/v1/send", {
+  let send_request = new Request("https://api.sendgrid.com/v3/mail/send", {
     method: "POST",
 
     headers: {
       "content-type": "application/json",
+      Authorization: `Bearer ${env.send_grid_key}`,
     },
 
     body: JSON.stringify({
