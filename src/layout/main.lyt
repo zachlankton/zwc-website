@@ -7,6 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="{{ META_DESCRIPTION }}" />
     <title>{{ PAGE_TITLE }}</title>
+    <link rel="preload" as="style" href="/styles/default.css" />
+    <link rel="preload" as="style" href="/styles/a11y-dark.css" />
+    <link rel="preload" as="script" href="/scripts/main.js" />
+    <link rel="preload" as="image" href="/favicon-32x32.png" />
+    <link rel="preload" as="image" href="/imgs/zwc.logo_300x-min.png" />
+    {{ PRELOADS }}
     <link rel="stylesheet" href="/styles/default.css" />
     <link rel="stylesheet" href="/styles/a11y-dark.css" />
 </head>

@@ -1,10 +1,24 @@
 {{page-title "Zach Writes Code Home Page"}}
 {{meta-description "This is the home page for Zach Writes Code"}}
+{{#preloads}}
+  <link rel="preload" as="image" href="/imgs/blog.jpg" />
+  <link rel="preload" as="image" href="/imgs/bmc-button.png" />
+  <link rel="preload" as="image" href="/imgs/code.jpg" />
+  <link rel="preload" as="image" href="/imgs/erpcap1.png" />
+  <link rel="preload" as="image" href="/imgs/me.jpg" />
+  <link rel="preload" as="image" href="/imgs/projects.jpg" />
+  <link
+    rel="preload"
+    as="image"
+    href="/blog/basic-linux-security/security.png"
+  />
+  <link rel="preload" as="image" href="/projects/ssg/ssg-small.png" />
+{{/preloads}}
 
 {{#sidebar}}
-{{mdfile "pages/sidebar.md"}}
+  {{mdfile "pages/sidebar.md"}}
 {{/sidebar}}
 
 {{#useLayout "layout/main.lyt"}}
-{{mdfile "pages/index.md"}}
+  {{mdfile "pages/index.md"}}
 {{/useLayout}}
