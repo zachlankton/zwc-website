@@ -9,3 +9,17 @@ https://:zwc-website.pages.dev/*
   Referrer-Policy: no-referrer
   Permissions-Policy: document-domain=()
   Content-Security-Policy: script-src 'self' 'sha256-Z3NFL1ecf1QXbxIG9CXGanyrlEm+KPFVkM6IkoXiV2Q=' 'sha256-O4LyQeyRQnqRbVo5FaeRw3xAsVVejtBGFEVJXT99Qf0=' 'sha256-CMpFgUfdNK5S+iVLGTIK6eR/x0y6Ro0giaqXzSA65Lo='; frame-ancestors 'none';
+  Link: </styles/default.css>; rel=preload; as=style
+  Link: </styles/a11y-dark.css>; rel=preload; as=style
+  Link: </scripts/main.js>; rel=preload; as=script
+  Link: </favicon-32x32.png>; rel=preload; as=image
+  Link: </imgs/zwc.logo_300x-min.png>; rel=preload; as=image
+  Link: </imgs/blog.jpg>; rel=preload; as=image
+  Link: </imgs/bmc-button.png>; rel=preload; as=image
+  Link: </imgs/code.jpg>; rel=preload; as=image
+  Link: </imgs/erpcap1.png>; rel=preload; as=image
+  Link: </imgs/me.jpg>; rel=preload; as=image
+  Link: </imgs/projects.jpg>; rel=preload; as=image
+  Link: </blog/basic-linux-security/security.png>; rel=preload; as=image
+  Link: </projects/ssg/ssg-small.png>; rel=preload; as=image
+
